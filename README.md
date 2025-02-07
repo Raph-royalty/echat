@@ -1,6 +1,9 @@
 # AI-Powered Product Search
 
 An intelligent product search application that uses LLMs and vector embeddings to understand natural language queries and find relevant products.
+## Preview Screenshots
+![Search Result](public/screenshot1.png)
+![Search Result](public/screenshot2.png)
 
 ## Features
 
