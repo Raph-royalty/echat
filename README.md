@@ -1,21 +1,40 @@
 # AI-Powered Product Search
 
-A Next.js application that uses AI embeddings to provide intelligent product search capabilities. The application matches user queries with product descriptions using semantic search powered by Ollama and LangChain.
+An intelligent product search application that uses LLMs and vector embeddings to understand natural language queries and find relevant products.
 
 ## Features
 
-- Semantic search using AI embeddings
-- Real-time product matching
-- Responsive product grid layout
-- Detailed product information display
-- Stock status indicators
-- Color variant displays
+- Natural language product search using LLMs
+- Semantic search with vector embeddings
+- AI-powered analysis of search results
+- Real-time product recommendations
+- Responsive UI with detailed product cards
+
+## Technical Stack
+
+- **Frontend**: Next.js 14 with React
+- **AI/ML**: 
+  - Ollama for LLM inference
+  - LangChain.js for AI orchestration
+  - Vector embeddings for semantic search
+- **Styling**: Tailwind CSS
 
 ## Prerequisites
 
-- Node.js 18 or later
-- Ollama running locally
-- The bge-base-zh-v1.5 model installed in Ollama
+- Node.js 18+
+- Ollama installed locally
+- At least 8GB RAM recommended
+
+## Setup Ollama models
+- Download the models from the Ollama Hub
+- bge-base-zh-v1.5 is a lightweight model that we use for embedding generation
+- llama3.2 is the full lightweight LLM model that we use for natural language understanding
+
+```bash
+ollama pull llama3.2
+ollama pull quentinz/bge-base-zh-v1.5
+```
+
 
 ## Setup
 
@@ -25,6 +44,7 @@ A Next.js application that uses AI embeddings to provide intelligent product sea
 npm install
 ```
 
+
 3. Ensure Ollama is running on http://localhost:11434
 
 4. Start the development server:
@@ -33,13 +53,6 @@ npm run dev
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) to view the application
-
-## Technology Stack
-
-- Next.js 14 (App Router)
-- LangChain.js
-- Ollama
-- Tailwind CSS
 
 ## Project Structure
 

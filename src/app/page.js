@@ -6,16 +6,15 @@ import { searchProducts } from './actions/search';
 
 export default function Home() {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
+  const [searchData, setSearchData] = useState({ results: [], analysis: '' });
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const searchResults = await searchProducts(query);
-      console.log('Search results:', searchResults);
-      setResults(searchResults);
+      const response = await searchProducts(query);
+      setSearchData(response);
     } catch (error) {
       console.error('Search failed:', error);
     } finally {
@@ -46,16 +45,28 @@ export default function Home() {
         </div>
       </form>
 
-      {results.length > 0 && (
+      {searchData.analysis && (
+        <div className="mb-8 p-4 bg-blue-50 rounded-lg">
+          <h2 className="text-xl font-semibold mb-2">AI Analysis</h2>
+          <p className="text-gray-700">{searchData.analysis}</p>
+        </div>
+      )}
+
+      {searchData.results.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {results.map(({ product }) => (
+          {searchData.results.map(({ product, score }) => (
             <div 
               key={product.id} 
-              className="border rounded-lg p-4 shadow-sm"
+              className="border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
             >
-              <h2 className="text-xl font-semibold">
-                {product.brand} {product.model}
-              </h2>
+              <div className="flex justify-between items-start">
+                <h2 className="text-xl font-semibold">
+                  {product.brand} {product.model}
+                </h2>
+                {/* <span className="text-sm text-gray-500">
+                  Match: {(score * 100).toFixed(1)}%
+                </span> */}
+              </div>
               <p className="text-green-600 font-bold mt-2">
                 KSh {product.price.toLocaleString()}
               </p>
@@ -91,6 +102,12 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {!loading && query && !searchData.results.length && (
+        <div className="text-center p-8 text-gray-500">
+          No products found matching your description. Try adjusting your search terms.
         </div>
       )}
     </main>
