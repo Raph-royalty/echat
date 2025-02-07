@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered Product Search
 
-## Getting Started
+A Next.js application that uses AI embeddings to provide intelligent product search capabilities. The application matches user queries with product descriptions using semantic search powered by Ollama and LangChain.
 
-First, run the development server:
+## Features
 
+- Semantic search using AI embeddings
+- Real-time product matching
+- Responsive product grid layout
+- Detailed product information display
+- Stock status indicators
+- Color variant displays
+
+## Prerequisites
+
+- Node.js 18 or later
+- Ollama running locally
+- The bge-base-zh-v1.5 model installed in Ollama
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Ensure Ollama is running on http://localhost:11434
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. Start the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. Open [http://localhost:3000](http://localhost:3000) to view the application
 
-## Learn More
+## Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 14 (App Router)
+- LangChain.js
+- Ollama
+- Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/page.js` - Main search interface
+- `app/actions/search.js` - Server-side search functionality
+- `app/data/products.json` - Product database
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application uses Next.js with the App Router and Server Actions. The search functionality is implemented using LangChain.js and Ollama for embedding generation and similarity search.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT

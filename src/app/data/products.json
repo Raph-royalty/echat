@@ -1,0 +1,180 @@
+[
+      {
+        "id": 1,
+        "brand": "Lenovo",
+        "model": "K13 Note",
+        "price": 19999,
+        "description": "A budget-friendly smartphone with great battery life and decent camera performance",
+        "features": [
+          "6.5-inch HD+ Display",
+          "4GB RAM",
+          "64GB Storage",
+          "5000mAh Battery",
+          "48MP Quad Camera",
+          "Snapdragon 460 Processor"
+        ],
+        "color": ["Blue", "Black"],
+        "inStock": true
+      },
+      {
+        "id": 2,
+        "brand": "Samsung",
+        "model": "Galaxy A53",
+        "price": 34999,
+        "description": "Mid-range smartphone with excellent camera capabilities and 5G connectivity",
+        "features": [
+          "6.5-inch Super AMOLED Display",
+          "8GB RAM",
+          "128GB Storage",
+          "5000mAh Battery",
+          "64MP Quad Camera",
+          "5G Enabled",
+          "Exynos 1280 Processor"
+        ],
+        "color": ["Black", "White", "Blue"],
+        "inStock": true
+      },
+      {
+        "id": 3,
+        "brand": "Xiaomi",
+        "model": "Redmi Note 11",
+        "price": 15999,
+        "description": "Feature-packed budget smartphone with impressive specifications",
+        "features": [
+          "6.43-inch AMOLED Display",
+          "6GB RAM",
+          "64GB Storage",
+          "5000mAh Battery",
+          "50MP Quad Camera",
+          "Snapdragon 680 Processor"
+        ],
+        "color": ["Gray", "Blue", "Purple"],
+        "inStock": true
+      },
+      {
+        "id": 4,
+        "brand": "OnePlus",
+        "model": "Nord CE 2",
+        "price": 24999,
+        "description": "Premium mid-range smartphone with fast charging and smooth performance",
+        "features": [
+          "6.43-inch AMOLED Display",
+          "8GB RAM",
+          "128GB Storage",
+          "4500mAh Battery",
+          "64MP Triple Camera",
+          "65W Fast Charging",
+          "Dimensity 900 Processor"
+        ],
+        "color": ["Gray", "Green"],
+        "inStock": true
+      },
+      {
+        "id": 5,
+        "brand": "Lenovo",
+        "model": "Legion Phone Duel",
+        "price": 49999,
+        "description": "Gaming-focused smartphone with top-tier performance and cooling system",
+        "features": [
+          "6.65-inch AMOLED Display",
+          "12GB RAM",
+          "256GB Storage",
+          "5000mAh Battery",
+          "64MP Dual Camera",
+          "90W Fast Charging",
+          "Snapdragon 865+ Processor"
+        ],
+        "color": ["Blue", "Red"],
+        "inStock": false
+      },
+      {
+        "id": 6,
+        "brand": "Samsung",
+        "model": "Galaxy M33",
+        "price": 18999,
+        "description": "Reliable mid-range smartphone with good battery life and 5G support",
+        "features": [
+          "6.6-inch LCD Display",
+          "6GB RAM",
+          "128GB Storage",
+          "6000mAh Battery",
+          "50MP Quad Camera",
+          "5G Enabled",
+          "Exynos 1280 Processor"
+        ],
+        "color": ["Green", "Blue", "Brown"],
+        "inStock": true
+      },
+      {
+        "id": 7,
+        "brand": "Xiaomi",
+        "model": "POCO X4 Pro",
+        "price": 21999,
+        "description": "Feature-rich smartphone with high refresh rate display and fast charging",
+        "features": [
+          "6.67-inch AMOLED Display",
+          "8GB RAM",
+          "128GB Storage",
+          "5000mAh Battery",
+          "108MP Triple Camera",
+          "67W Fast Charging",
+          "Snapdragon 695 Processor"
+        ],
+        "color": ["Yellow", "Blue", "Black"],
+        "inStock": true
+      },
+      {
+        "id": 8,
+        "brand": "OnePlus",
+        "model": "10R",
+        "price": 38999,
+        "description": "Premium smartphone with ultra-fast charging and powerful performance",
+        "features": [
+          "6.7-inch AMOLED Display",
+          "12GB RAM",
+          "256GB Storage",
+          "4500mAh Battery",
+          "50MP Triple Camera",
+          "150W Fast Charging",
+          "Dimensity 8100 Max Processor"
+        ],
+        "color": ["Black", "Green"],
+        "inStock": true
+      },
+      {
+        "id": 9,
+        "brand": "Lenovo",
+        "model": "Z6 Pro",
+        "price": 22999,
+        "description": "Mid-range smartphone with quad cameras and efficient performance",
+        "features": [
+          "6.39-inch AMOLED Display",
+          "6GB RAM",
+          "128GB Storage",
+          "4000mAh Battery",
+          "48MP Quad Camera",
+          "27W Fast Charging",
+          "Snapdragon 855 Processor"
+        ],
+        "color": ["Black", "Blue"],
+        "inStock": true
+      },
+      {
+        "id": 10,
+        "brand": "Samsung",
+        "model": "Galaxy F23",
+        "price": 16999,
+        "description": "Budget-friendly 5G smartphone with good performance and durability",
+        "features": [
+          "6.6-inch LCD Display",
+          "4GB RAM",
+          "64GB Storage",
+          "5000mAh Battery",
+          "50MP Triple Camera",
+          "5G Enabled",
+          "Snapdragon 750G Processor"
+        ],
+        "color": ["Aqua", "Forest Green"],
+        "inStock": true
+      }
+]
