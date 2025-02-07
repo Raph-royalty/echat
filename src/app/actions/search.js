@@ -13,7 +13,7 @@ async function initializeVectorStore() {
   if (vectorStore) return;
 
   const embeddings = new OllamaEmbeddings({
-    model: "quentinz/bge-base-zh-v1.5:latest",
+    model: "nomic-embed-text",
     baseUrl: "http://localhost:11434",
   });
 

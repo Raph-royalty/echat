@@ -27,12 +27,12 @@ An intelligent product search application that uses LLMs and vector embeddings t
 
 ## Setup Ollama models
 - Download the models from the Ollama Hub
-- bge-base-zh-v1.5 is a lightweight model that we use for embedding generation
+- nomic-embed-text is the model that we use for embeddings generation
 - llama3.2 is the full lightweight LLM model that we use for natural language understanding
 
 ```bash
 ollama pull llama3.2
-ollama pull quentinz/bge-base-zh-v1.5
+ollama pull nomic-embed-text
 ```
 
 
